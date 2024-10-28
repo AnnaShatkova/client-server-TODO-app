@@ -1,0 +1,41 @@
+$page-color: rgba(242, 245, 247, 1);
+$white: rgba(255, 255, 255, 1);
+$text-color: rgba(50, 55, 73, 1);
+$button-border-color: rgba(222, 223, 229, 1);
+$button-box-shadows: rgba(16, 24, 40, 0.05);
+$button-hover-color: rgba(222, 223, 229, 1);
+$button-active-color: rgba(239, 239, 239, 1);
+$checkbox-border-color: rgba(50, 55, 73, 1);
+$checkbox-bg-color: rgba(0, 174, 28, 1);
+$todo-bg-color-hover: rgba(239, 239, 239, 1);
+$text-loading-color: rgba(115, 115, 115, 1);
+
+$button-color-default: rgba(0, 174, 28, 1);
+$button-color-disabled: rgba(24, 119, 39, 1);
+$button-color-hovered: rgba(92, 225, 113, 1);
+$button-color-pressed: rgba(12, 213, 43, 1);
+$page-bg-color: rgba(242, 245, 247, 1);
+$grey: rgba(69, 69, 69, 1);
+$box-shadow-color: rgba(0, 0, 0, 0.25);
+$box-shadow-color-hover: rgba(0, 0, 0, 0.5);
+
+//-----Inputs-------
+$input-border-color-default: rgba(115, 115, 115, 1);
+$input-border-color-filled: rgba(115, 115, 115, 1);
+$input-border-color-active: rgba(50, 55, 73, 1);
+$input-border-color-disabled: rgba(115, 115, 115, 1);
+$input-border-color-error: rgba(255, 86, 32, 1);
+$input-label-color: rgba(50, 55, 73, 1);
+$input-label-color-disabled: rgba(115, 115, 115, 1);
+$input-text-color: rgba(50, 55, 73, 1);
+$input-text-color-disabled: rgba(115, 115, 115, 1);
+$input-text-color-error: rgba(255, 86, 32, 1);
+$input-bg-color-dark: rgba(52, 51, 51, 0.51);
+
+//break points
+$mobile: 320px;
+$large_mobile: 480px;
+$tablet: 640px;
+$laptop: 768px;
+$desktop: 1024px;
+$widescreen: 1200px;

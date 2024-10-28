@@ -1,0 +1,135 @@
+@import "./variables";
+@import "./reset";
+
+@font-face {
+  font-family: "Inter";
+  src: url("./../fonts/inter/Inter-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./../fonts/inter/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./../fonts/roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+.App {
+  min-height: 100vh;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $page-color;
+
+  &__loading,
+  &__error {
+    color: $text-loading-color;
+    font-size: 20px;
+  }
+
+  .main {
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    background-color: $white;
+
+    &__line {
+      height: 2px;
+      width: 100%;
+      background-color: rgba(222, 223, 229, 1);
+      box-shadow: 0px 1px 2px 0px rgba(222, 223, 229, 1);
+    }
+
+    &__input {
+      width: 100%;
+      max-width: 668px;
+      background-color: $white;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 8px 8px 0 0;
+      padding: 16px 0 0 0;
+
+      input {
+        flex: 1;
+        padding: 0 16px;
+
+        &:disabled {
+          background-color: $white;
+        }
+      }
+    }
+
+    &__add-button {
+      width: 80px;
+      height: 36px;
+      background-color: $button-color-default;
+      box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+      border-radius: 8px;
+      color: $white;
+      font-family: "Roboto", sans-serif;
+      font-size: 15px;
+      will-change: background-color;
+      transition: background-color 0.5s ease;
+
+      img {
+        margin-right: 4px;
+      }
+
+      &:hover {
+        background-color: $button-color-hovered;
+      }
+
+      &:active {
+        background-color: $button-color-pressed;
+      }
+    }
+  }
+
+  &__clear-all-button {
+    width: 300px;
+    height: 36px;
+    background-color: $white;
+    color: $text-color;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    border: 1px solid $button-border-color;
+    box-shadow: 0 1px 2px $button-box-shadows;
+    border-radius: 8px;
+    will-change: background-color transform;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    img {
+      margin-right: 4px;
+    }
+
+    &:hover {
+      background-color: $button-hover-color;
+    }
+
+    &:active {
+      background-color: $button-active-color;
+      transform: scale(0.9);
+    }
+  }
+}
