@@ -9,10 +9,10 @@ This is a TODO application with a client-server architecture, using async operat
 
 ## Technologies Used
 
-- Frontend: React, react-query, CSS Modules, "optimistic update" pattern for operations: create, edit, delete
+- Frontend: React, react-query, CSS Modules
 - Backend: Node.js, Express
 
 ## Start the application:
 
-node server.js
-npm run dev
+- node server.js
+- npm run dev
